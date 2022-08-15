@@ -24,7 +24,8 @@ class EventCard extends HTMLElement {
   attributeChangedCallback(name, oldValue, newValue) {
     console.debug("4-cambio-en-los-atributos")
     switch (name) {
-      case "disabled": {
+      case "event-title": {
+        console.debug("Se detecto un cambio en atributo", name, oldValue, newValue)
         break;
       }
       default: {
